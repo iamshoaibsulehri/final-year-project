@@ -1,0 +1,133 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.header-top{background-color:#040848;}
+.main-menu nav ul li:hover a {color: #040848; }
+.main-menu nav ul li.mega-menu-position ul.mega-menu > li ul li a:hover {color: #040848; }
+.main-menu nav ul li ul.submenu li a:hover {color: #040848; }
+.cart-wrap:hover > button {color: #040848; }
+.count-style{background-color:#040848;}
+.header-search:hover > button {color: #040848; }
+
+  .default-btn
+  {
+    background-color: #040848;
+  }
+.admission-title .apply-btn a.default-btn {
+    background-color: #040848;
+    color: #fff;
+    -webkit-box-shadow: 0px 6px 12px 0.8px rgba(42, 42, 42, 0.26);
+    box-shadow: 0px 6px 12px 0.8px rgba(42, 42, 42, 0.26); }
+    .admission-title .apply-btn a.default-btn:hover {
+      background-color: #fff;
+      color: #000; }
+	  
+.sidebar-recent-course .sin-sidebar-recent-course .sidebar-recent-course-content h4 a:hover {
+        color: #040848; }
+		
+.single-course .course-position-content .course-btn a.default-btn {
+	  background-color:#040848;
+	  color:#fff;
+      border-radius: 0 50px 51px 0;
+      font-size: 14px;
+      padding: 15px 40px 15px; }
+	  
+.testi-content.default-overlay:before {
+  background-color: #040848;
+  opacity: .95; }
+  
+ .ratting-form-wrapper .ratting-form form .form-submit input {
+    width: auto;
+    padding: 10px 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 55px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000; }
+    .ratting-form-wrapper .ratting-form form .form-submit input:hover {
+      background-color: #040848;
+      border: 1px solid #040848; }
+	  
+.single-teacher:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #040848;
+    opacity: .9;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+  .single-teacher:after {
+    border: 1px solid #040848;
+    left: 12px;
+    top: 15px;
+    right: 12px;
+    bottom: 15px;
+    position: absolute;
+    content: "";
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+
+ .single-blog .blog-content-wrap .blog-date {
+      background-color: #040848;
+      padding: 6px 20px 8px; }
+.footer-top.default-overlay:before {
+  background-color: #040848;
+  opacity: .89; }
+  
+  
+ .footer-widget .subscribe-style .subscribe-form form .clear input {
+  width: auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  height: auto;
+  padding: 9px 40px;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: .5px; }
+  .footer-widget .subscribe-style .subscribe-form form .clear input:hover {
+    background-color: #040484;
+    color: #fff; }
+	
+	.footer-bottom {
+  background-color: #040848; }
+  
+ #scrollUp {
+  width: 50px;
+  height: 50px;
+  background-color: #040848;
+  color: #fff;
+  right: 20px;
+  bottom: 60px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 9811 !important; }
+
+.icon-position
+{
+margin-top: 34px;
+}
+.sub-width
+{
+  width: 350px !important;
+}
+.slider-active {
+    background-image: url(../../img/slider/slider-1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
