@@ -125,9 +125,13 @@ margin-top: 34px;
 {
   width: 350px !important;
 }
-.slider-active {
+/*.slider-active {
     background-image: url(../../img/slider/slider-1.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+}*/
+
+.breadcrumb-bottom {
+    background-color: #040848;
 }
