@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="Views\NewFolder\**" />
+    <Compile Remove="wwwroot\AdminPan\**" />
     <Content Remove="Views\NewFolder\**" />
+    <Content Remove="wwwroot\AdminPan\**" />
     <EmbeddedResource Remove="Views\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\AdminPan\**" />
     <None Remove="Views\NewFolder\**" />
+    <None Remove="wwwroot\AdminPan\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +35,13 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\asstes\" />
+    <Folder Include="wwwroot\adminpanel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Shared\_LayoutAdmin.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
   </ItemGroup>
 
 </Project>
