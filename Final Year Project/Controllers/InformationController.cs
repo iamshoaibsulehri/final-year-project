@@ -12,5 +12,13 @@ namespace Final_Year_Project.Controllers
         {
             return View();
         }
+        public IActionResult Transport()
+        {
+            return View();
+        }
+        public IActionResult FAQS()
+        {
+            return View();
+        }
     }
 }
