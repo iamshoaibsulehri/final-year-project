@@ -20,5 +20,26 @@ namespace Final_Year_Project.Controllers
         {
             return View();
         }
+        public IActionResult Safety()
+        {
+            return View();
+        }
+        public IActionResult ITCenter()
+        {
+            return View();
+        }
+        public IActionResult ContactUs()
+        {
+            return View();
+        }
+        public IActionResult LABs()
+        {
+            return View();
+
+        }
+        public IActionResult Hostel()
+        {
+            return View();
+        }
     }
 }

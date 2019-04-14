@@ -7,7 +7,7 @@
 
     <environment include="Development">
         @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />*@
+            <link rel="stylesheet" href="~/css/site.css" />*@
         <!-- Bootstrap CSS -->
         <link href="~/asstes/css/bootstrap.min.css" rel="stylesheet" />
         <!-- Icon Font CSS -->
@@ -25,6 +25,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    @RenderSection("head", required: false)
 </head>
 <body>
     <header class="header-area">
@@ -42,54 +43,66 @@
                     <div class="col-lg-6 col-md-5 col-12 col-sm-4">
                         <div class="login-register">
                             <ul>
-                                <li><a href="login-register.html">Login</a></li>
-                                <li><a href="login-register.html">Register</a></li>
+                                <li><a asp-controller="admin" asp-action="LoginPage">Login</a></li>
+                                <li><a asp-controller="admin" asp-action="RegisterPage">Register</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom sticky-bar clearfix">
+        <div class="header-bottom sticky-bar clearfix" style="background-color:lightgray">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-6 col-4">
                         <div class="logo">
                             <a href="index.html">
-                                <img alt="" src="~/img/logo/logo.png" />
+                                <img alt="" src="~/img/logo/logo.png" style="padding-bottom:1em;"/>
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-10 col-md-6 col-8">
+                    <div class="col-lg-10 col-md-6 col-8" style="padding-top:2em;">
                         <div class="menu-cart-wrap">
                             <div class="main-menu">
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="http://localhost:52685/first/firstpage"> HOME </a>
+                                            <a href="http://localhost:52685/first/firstpage"><h4 style="color:forestgreen">HOME</h4></a>
                                         </li>
-                                        <li><a href="http://localhost:52685/information/about_us"> ABOUT  </a></li>
+                                        <li><a href="http://localhost:52685/information/about_us"><h4 style="color:forestgreen">ABOUT</h4></a></li>
                                         <li>
-                                            <a href="#">Programs <i class="fa fa-angle-down"></i> </a>
-                                            <ul class="submenu">
-                                                <li><a href="course.html">Faculty of Computing and Information Technology Programs</a></li>
-                                                <li><a href="event.html">Faculty of Science</a></li>
-                                                <li><a href="shop.html">Faculty of Management Sciences</a></li>
-                                                <li><a href="course-details.html">Faculty of Social Sciences </a></li>
-                                                <li><a href="event-details.html">Faculty of Business and Management</a></li>
-                                                <li><a href="single-product.html">Faculty of Allied Health Science</a></li>
-                                            </ul>
+                                            <a href="#"><h4 style="color:forestgreen">PROGRAM</h4></a><i class="fa fa-angle-down"></i>
+                                                                                                      <ul class="submenu"  style="margin-top:14px;padding-top:2em;list-style-type:none;">
+                                                                                                          <li>
+                                                                                                              <a href="course.html">Faculty of Computing and Information Technology Programs</a>
+                                                                                                          </li>
+                                                                                                          <li>
+                                                                                                              <a href="event.html">Faculty of Science</a>`1
+                                                                                                          </li>
+                                                                                                          <li>
+                                                                                                              <a href="shop.html">Faculty of Management Sciences</a>
+                                                                                                          </li>
+                                                                                                          <li>
+                                                                                                              <a href="course-details.html">Faculty of Social Sciences<</a>
+                                                                                                          </li>
+                                                                                                          <li>
+                                                                                                              <a href="event-details.html">Faculty of Business and Management</a>
+                                                                                                          </li>
+                                                                                                          <li>
+                                                                                                              <a href="single-product.html">Faculty of Allied Health Science</a>
+                                                                                                          </li>
+                                                                                                      </ul>
                                         </li>
-                                        <li>
-                                            <a href="blog.html"> BLOG </a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
+                                                <li>
+                                                    <a href="blog.html"><h4 style="color:forestgreen">BLOG</h4></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">blog</a></li>
+                                                        <li><a href="blog-details.html">blog details</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a asp-controller="information" asp-action="contactus"> <h4 style="color:forestgreen">CONTACT</h4></a></li>
                                             </ul>
-                                        </li>
-                                        <li><a href="contact.html"> CONTACT </a></li>
-                                    </ul>
-                                </nav>
+</nav>
                             </div>
 
                             <div class="header-search">
@@ -118,8 +131,7 @@
 
                                 </li>
                                 <li><a href="about-us.html">About</a></li>
-
-                                <li>
+                                
                                     <a href="#">Programs</a>
                                     <ul>
                                         <li><a href="course.html">Faculty of Computing and Information Technology Programs</a></li>
@@ -138,7 +150,7 @@
                                         <li><a href="blog-details.html">blog details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a asp-controller="Information" asp-action="ContactUs">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -149,7 +161,7 @@
 
 
     @*<partial name="_CookieConsentPartial" />*@
-
+    
     <footer class="footer-area">
         @RenderBody()
         <hr />
@@ -253,6 +265,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="footer-bottom pt-15 pb-15">
             <div class="container">
                 <div class="row align-items-center">
@@ -288,17 +302,17 @@
 
     <environment include="Development">
         @*<script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+            <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
 
         <!-- jQuery JS -->
         <script src="~/asstes/js/vendor/jquery-1.12.4.min.js"></script>
-       
+
         <script src="~/js/site.js" asp-append-version="true"></script>
 
         <!-- Modernizer JS -->
         <script src="~/asstes/js/vendor/modernizr-2.8.3.min.js"></script>
         <!-- JS
-    ============================================ -->
+        ============================================ -->
         <!-- Popper JS -->
         <script src="~/asstes/js/popper.min.js"></script>
         <!-- Bootstrap JS -->

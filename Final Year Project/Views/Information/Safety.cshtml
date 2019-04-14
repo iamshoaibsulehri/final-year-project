@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewData["Title"] = "Safety";
+}
+
+<h2>Safety</h2>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>University Of Sialkot Front Page Design</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/">
+
+    @*<!-- CSS
+        ============================================ -->
+        <!-- Bootstrap CSS -->
+        <link href="~/asstes/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Icon Font CSS -->
+        <link href="~/asstes/css/icons.min.css" rel="stylesheet" />
+        <!-- Plugins CSS -->
+        <link href="~/asstes/css/plugins.css" rel="stylesheet" />
+        <!-- Main Style CSS -->
+        <link href="~/asstes/css/style.css" rel="stylesheet" />
+        <!--- Qasim Css--->
+        <link href="~/asstes/css/main.css" rel="stylesheet" />
+        <!-- Modernizer JS -->
+        <script src="~/asstes/js/vendor/modernizr-2.8.3.min.js"></script>*@
+</head>
+<body>
+    <div class="breadcrumb-area">
+        <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url(/img/teacher/teacher-2.jpg);">
+            <div class="container">
+                <h2>SAFETY & SECURITY</h2>
+                <p>USKT provide a PICK & DROP Ficilites for Both Male & Females Students</p>
+            </div>
+        </div>
+        <div class="breadcrumb-bottom">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a> <span><i class="fa fa-angle-double-right"></i> About Page</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="width:85%; margin:auto;">
+        <div class="row" style="padding: 30px 0px;">
+            <div class="col-sm-3">
+                <ul class="nav nav-tabs nav-stacked">
+                    <li style="margin-left: 0px" class="btn btn-success btn-block"><a onclick="overview()">Introduction<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li style="margin-left: 0px" class="btn btn-success btn-block"><a onclick="ourteam()" href="#outteam">Our Team<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class=" btn-success btn btn-block"><a onclick="contactus()" href="#contactus">Contact Us<span class="gglyphicon-chevron-right"></span></a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-9 col-md-9 " style="box-shadow:10px 10px 10px 10px inset;color:lightgray">
+                <div class="soc_form">
+                    <div class="soc_details_head" id="heading"></div>
+                    <div class="info_body" style="height: 500px; overflow:auto;">
+
+
+                        <div id="overview">
+                            <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px">Introduction</h1>
+                            <hr />
+                            <div>
+                                <p class="para" style="margin:40px 40px 40px 40px;font-size:medium;text-align:justify;color:lightgreen">
+                                    <strong>
+                                        The Security Department of USKT creates and implements security standards, policies and procedures. This department identifies, investigates, or resolves security breaches. It monitors and ensures a safe, conducive and ethical environment. Security department plans, direct and coordinate security activities to safeguard students, employees, guests and property. Furthermore, Security department communicates security status, updates and actual or potential problems, using established protocols, and implement policies to protect personnel against harassment, threats and violence.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="ourteam">
+                            <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px">Our Team</h1>
+                            <hr />
+                            <div>
+                                <p class="para" style="margin:40px 40px 40px 40px;font-size:medium;text-align:justify;color:lightgreen">
+                                    <strong>
+                                        The Security Department of USKT creates and implements security standards, policies and procedures. This department identifies, investigates, or resolves security breaches. It monitors and ensures a safe, conducive and ethical environment. Security department plans, direct and coordinate security activities to safeguard students, employees, guests and property. Furthermore, Security department communicates security status, updates and actual or potential problems, using established protocols, and implement policies to protect personnel against harassment, threats and violence.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="contactus">
+                            <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px">Contact Us</h1>
+                            <hr />
+                            <div>
+                                <p class="para" style="margin:40px 40px 40px 40px;font-size:medium;text-align:justify;color:lightgreen">
+                                    <strong>
+                                        The Security Department of USKT creates and implements security standards, policies and procedures. This department identifies, investigates, or resolves security breaches. It monitors and ensures a safe, conducive and ethical environment. Security department plans, direct and coordinate security activities to safeguard students, employees, guests and property. Furthermore, Security department communicates security status, updates and actual or potential problems, using established protocols, and implement policies to protect personnel against harassment, threats and violence.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+    <script>
+        function overview() {
+            document.getElementById("overview").style.display = "block";
+            document.getElementById("ourteam").style.display = "none";
+            document.getElementById("contactus").style.display = "none";
+        }
+
+        function ourteam() {
+            document.getElementById("overview").style.display = "none";
+            document.getElementById("ourteam").style.display = "block";
+            document.getElementById("contactus").style.display = "none";
+        }
+        function contactus() {
+            document.getElementById("overview").style.display = "none";
+            document.getElementById("ourteam").style.display = "none";
+            document.getElementById("contactus").style.display = "block";
+        }
+        overview();
+    </script>
+
+</body>
+

@@ -1,0 +1,262 @@
+﻿
+@{
+    ViewData["Title"] = "LABs";
+}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>University Of Sialkot Front Page Design</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/">
+
+    @*<!-- CSS
+        ============================================ -->
+        <!-- Bootstrap CSS -->
+        <link href="~/asstes/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Icon Font CSS -->
+        <link href="~/asstes/css/icons.min.css" rel="stylesheet" />
+        <!-- Plugins CSS -->
+        <link href="~/asstes/css/plugins.css" rel="stylesheet" />
+        <!-- Main Style CSS -->
+        <link href="~/asstes/css/style.css" rel="stylesheet" />
+        <!--- Qasim Css--->
+        <link href="~/asstes/css/main.css" rel="stylesheet" />
+        <!-- Modernizer JS -->
+        <script src="~/asstes/js/vendor/modernizr-2.8.3.min.js"></script>*@
+</head>
+<body>
+    <div class="breadcrumb-area">
+        <div class="breadcrumb-top default-overlay bg-img pt-100 pb-95" style="background-image:url(/img/slide-2-1024x387.jpg);">
+            <div class="container">
+                <h2 class="text-center">LABS</h2>
+                <p>USKT provide a facilites of all purpose Labs for Student For Research purposes</p>
+            </div>
+        </div>
+        <div class="breadcrumb-bottom">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a> <span><i class="fa fa-angle-double-right"></i> About Page</span></li>
+                </ul>
+            </div>
+        </div>
+        @*<div class="breadcrumb-bottom" style="color:orange">
+                <div class="container" style="color:darkorange">
+                    <ul>
+                        <li><a href="#">HOME</a> <span><i class="fa fa-angle-double-right"></i> About Page</span> <span><i class="fa fa-angle-double-right"></i> About Page</span> <span><i class="fa fa-angle-double-right"></i> About Page</span> <span><i class="fa fa-angle-double-right"></i> About Page</span></li>
+                    </ul>
+                </div>
+            </div>*@
+    </div>
+   <div style="width:85%; margin:auto;">
+        <div class="row" style="padding: 30px 0px;">
+            <div class="col-sm-3">
+                <ul class="nav nav-tabs nav-stacked">
+                    <li style="margin-left: 0px" class="btn btn-success btn-block"><a onclick="CompScience()">Computer Science<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li style="margin-left: 0px" class="btn btn-success btn-block"><a onclick="BioChem()" href="#BioChem">Bio-Chemistry Lab<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class=" btn-success btn btn-block"><a onclick="Physics()" href="#Physics">PhysicsLab<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    <li class=" btn-success btn btn-block"><a onclick="BioTech()" href="#BioTech">Bio-Tecnology Lab<span class="gluphicon glyphicon-chevron-right"></span></a></li>
+                    <li class=" btn-success btn btn-block"><a onclick="Zoology()" href="#Zoology">Zoology LA<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-sm-9 col-md-9 " style="box-shadow:10px 10px 10px 10px inset;color:lightgray">
+                <div class="soc_form">
+                    <div class="soc_details_head" id="heading"></div>
+                    <div class="info_body" style="height:auto; overflow:auto;">
+
+
+                        <div id="CompScience">
+                           <div class="col-md-1"> </div>
+                      <div class="col-md-12">
+                                <div>
+                                    <div class="rounded-circle">
+                                        <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px;background-color:gray;text-align:center" class="rounded-right">Computer LABs</h1>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12">
+                                        <img id="ContentCs" class="img-responsive img-thumbnail" src="~/img/cmpressComputerImg.jpg" style="width:150%;" />
+                                        </br></br>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2 class="heading font-weight-bolder rounded-circle " style="background-color:gray ;text-align:center;color:#ff6a00">Computer Science Experimental Lab</h2>
+                                            <p class="font-italic" style="text-align:center">The Computer Laboratory is an academic department within the University of Sialkot that encompasses Computer Science, along with many aspects of Engineering, Technology and Mathematics. IT and Computer Services labs provides wide range of technical facilities and services. Labs provides high speed internet connectivity, latest desktop , multimedia and other equipment.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </div>
+
+
+                                <br />     <br />     <br />
+
+                            </div>
+                        </div>
+                        <div id="BioTech">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="rounded-circle">
+                                        <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px;background-color:gray;text-align:center" class="rounded-right">BIO_TECNOLOGY LABs</h1>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12">
+                                        <img id="ContentBioTech" class="img-responsive img-thumbnail" src="~/img/w1.jpg" style="width:150%;" />
+                                        </br></br>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2 class="heading font-weight-bolder rounded-circle " style="background-color:gray ;text-align:center;color:#ff6a00">Computer Science Experimental Lab</h2>
+                                            <p class="font-italic" style="text-align:center">The Computer Laboratory is an academic department within the University of Sialkot that encompasses Computer Science, along with many aspects of Engineering, Technology and Mathematics. IT and Computer Services labs provides wide range of technical facilities and services. Labs provides high speed internet connectivity, latest desktop , multimedia and other equipment.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </div>
+
+
+                                <br />     <br />     <br />
+
+                            </div>
+
+                        </div>
+                        <div id="Physics">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="rounded-circle">
+                                        <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px;background-color:gray;text-align:center" class="rounded-right">Physics Lab</h1>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12">
+                                        <img id="ContentPhy" class="img-responsive img-thumbnail" src="~/img/cphysics.jpg" style="width:150%;" />
+                                        </br></br>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2 class="heading font-weight-bolder rounded-circle " style="background-color:gray ;text-align:center;color:#ff6a00">Computer Science Experimental Lab</h2>
+                                            <p class="font-italic" style="text-align:center">The Computer Laboratory is an academic department within the University of Sialkot that encompasses Computer Science, along with many aspects of Engineering, Technology and Mathematics. IT and Computer Services labs provides wide range of technical facilities and services. Labs provides high speed internet connectivity, latest desktop , multimedia and other equipment.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </div>
+
+
+                                <br />     <br />     <br />
+
+                            </div>
+
+                        </div>
+                        <div id="Zoology">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="rounded-circle">
+                                        <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px;background-color:gray;text-align:center" class="rounded-right">Computer LABs</h1>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12">
+                                        <img id="ContentZoo" class="img-responsive img-thumbnail"  src="~/img/zoology.JPG"  width="150%"/>/" style="width:150%;" />
+                                        </br></br>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2 class="heading font-weight-bolder rounded-circle " style="background-color:gray ;text-align:center;color:#ff6a00">Computer Science Experimental Lab</h2>
+                                            <p class="font-italic" style="text-align:center">The Computer Laboratory is an academic department within the University of Sialkot that encompasses Computer Science, along with many aspects of Engineering, Technology and Mathematics. IT and Computer Services labs provides wide range of technical facilities and services. Labs provides high speed internet connectivity, latest desktop , multimedia and other equipment.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </div>
+
+
+                                <br />     <br />     <br />
+
+                            </div>
+
+                        </div>
+                        <div id="BioChem">
+                            @*<div class="col-md-1"></div>*@
+                            <div class="col-md-12">
+                                <div>
+                                    <div class="rounded-circle">
+                                        <h1 style="color:#ff6a00;margin-left:30px;margin-top:40px;background-color:gray;text-align:center" class="rounded-right">Computer LABs</h1>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12 col-sm-12">
+                                        <img id="ContentBioChem" class="img-responsive img-thumbnail" src="~/img/BioChem.jpg" style="width:150%;" />
+                                        </br></br>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2 class="heading font-weight-bolder rounded-circle " style="background-color:gray ;text-align:center;color:#ff6a00">Computer Science Experimental Lab</h2>
+                                            <p class="font-italic" style="text-align:center">The Computer Laboratory is an academic department within the University of Sialkot that encompasses Computer Science, along with many aspects of Engineering, Technology and Mathematics. IT and Computer Services labs provides wide range of technical facilities and services. Labs provides high speed internet connectivity, latest desktop , multimedia and other equipment.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                </div>
+
+
+                                <br />     <br />     <br />
+
+                            </div>
+
+                        </div>
+
+
+                      
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+    <script>
+        function CompScience() {
+            document.getElementById("CompScience").style.display = "block";
+            document.getElementById("BioChem").style.display = "none";
+            document.getElementById("Physics").style.display = "none";
+            document.getElementById("BioTech").style.display = "none";
+            document.getElementById("Zoology").style.display = "none";
+
+        }
+
+        function BioChem() {
+            document.getElementById("CompScience").style.display = "none";
+            document.getElementById("BioChem").style.display = "block";
+            document.getElementById("Physics").style.display = "none";
+            document.getElementById("BioTech").style.display = "none";
+            document.getElementById("Zoology").style.display = "none";
+        }
+        function Physics() {
+            document.getElementById("CompScience").style.display = "none";
+            document.getElementById("BioChem").style.display = "none";
+            document.getElementById("Physics").style.display = "block";
+            document.getElementById("BioTech").style.display = "none";
+            document.getElementById("Zoology").style.display = "none";
+        }
+        function BioTech() {
+            document.getElementById("CompScience").style.display = "none";
+            document.getElementById("BioChem").style.display = "none";
+            document.getElementById("Physics").style.display = "none";
+            document.getElementById("BioTech").style.display = "block";
+            document.getElementById("Zoology").style.display = "none";
+        }
+        function Zoology() {
+            document.getElementById("CompScience").style.display = "none";
+            document.getElementById("BioChem").style.display = "none";
+            document.getElementById("Physics").style.display = "none";
+            document.getElementById("BioTech").style.display = "none";
+            document.getElementById("Zoology").style.display = "block";
+        }
+        CompScience();
+    </script>
+
+</body>

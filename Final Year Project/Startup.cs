@@ -67,7 +67,7 @@ namespace Final_Year_Project
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=First}/{action=Firstpage}/{id?}");
             });
         }
     }
