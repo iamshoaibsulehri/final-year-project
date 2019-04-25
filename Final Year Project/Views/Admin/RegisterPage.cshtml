@@ -1,9 +1,20 @@
-﻿
+﻿@model FinalYearProject.Models.Registeration;
 @{
     ViewData["Title"] = "RegisterPage";
     Layout = "~/views/shared/_LayoutAdmin.cshtml";
-}
 
+ if (ViewBag.Message != null)
+    {
+        if (ViewBag.Message == "Registration Done Succefully!")
+        {
+<h2 class="alert alert-success"><span class="glyphicon glyphicon-ok-circle"></span> @ViewBag.Message</h2>
+        }
+        else
+        {
+<h2 class="alert alert-danger"><span class="glyphicon glyphicon-remove-circle"></span> @ViewBag.Message</h2>
+        }
+    }
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,13 +45,13 @@
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image img-responsive img-profile" style="background-image:url(/img/beverage-blog-blogger-1799342.jpg);height:auto;width:150px;"></div>
+                    <div class="col-lg-7" style="background-image:url(/img/bench-accounting-49909-unsplash.jpg)">
                         <div class="p-5">
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" method="post" enctype="multipart/form-data">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name">
@@ -56,11 +67,11 @@
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
-                                    </div>
+                                    @*<div class="col-sm-6">
+                                            <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+                                        </div>*@
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                <a asp-action="LoginPage" asp-controller="Admin" class="btn btn-primary btn-user btn-block">
                                     Register Account
                                 </a>
                                 <hr>
@@ -76,7 +87,7 @@
                                 <a class="small" href="forgot-password.html">Forgot Password?</a>
                             </div>
                             <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" asp-action="Loginpage" asp-controller="admin">Already have an account? Login!</a>
                             </div>
                         </div>
                     </div>

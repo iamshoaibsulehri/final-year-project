@@ -12,5 +12,9 @@ namespace Final_Year_Project.Controllers
         {
             return View();
         }
+        public IActionResult AddFaculty()
+        {
+            return View();
+        }
     }
 }

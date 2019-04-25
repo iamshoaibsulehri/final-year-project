@@ -1,0 +1,96 @@
+﻿@model FinalYearProject.Models.FacultyProfile
+
+@{
+    ViewData["Title"] = "AddFaculty";
+}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>University Of Sialkot Front Page Design</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/">
+
+    @*<!-- CSS
+        ============================================ -->
+        <!-- Bootstrap CSS -->
+        <link href="~/asstes/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Icon Font CSS -->
+        <link href="~/asstes/css/icons.min.css" rel="stylesheet" />
+        <!-- Plugins CSS -->
+        <link href="~/asstes/css/plugins.css" rel="stylesheet" />
+        <!-- Main Style CSS -->
+        <link href="~/asstes/css/style.css" rel="stylesheet" />
+        <!--- Qasim Css--->
+        <link href="~/asstes/css/main.css" rel="stylesheet" />
+        <!-- Modernizer JS -->
+        <script src="~/asstes/js/vendor/modernizr-2.8.3.min.js"></script>*@
+</head>
+<body>
+    <div class="container-img bg-img pb-130" style="background-image:url(/img/bench-accounting-49909-unsplash.jpg);z-index:-3;padding-top:-2em">
+        <h1 class="" style="text-align:center;color:darkgoldenrod">FacultyProfile</h1>
+        <hr />
+        <div class="row" style="margin-left:100px;">
+            <div class="col-md-4">
+                <form asp-action="AddFaculty" asp-controller="Admin" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Role" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="Role" class="form-control" />
+                        <span asp-validation-for="Role" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Department" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="Department" class="form-control" />
+                        <span asp-validation-for="Department" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Education" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="Education" class="form-control" />
+                        <span asp-validation-for="Education" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="University" class="control-label" style="font-size:large;text-overflow:inherit"></label>
+                        <input asp-for="University" class="form-control" />
+                        <span asp-validation-for="University" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4" style="float:left;">
+
+                        <input type="file" accept=".jpg, .png" id="picture" asp-for="ProfilePicture" />
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+
+        <div>
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</body>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

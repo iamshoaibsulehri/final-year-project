@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using Final_Year_Project.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Final_Year_Project.Models;
+using FinalYearProject.Models;
 
 namespace Final_Year_Project
 {
@@ -37,16 +39,24 @@ namespace Final_Year_Project
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<USKTContext>(options =>
+               options.UseSqlServer(
+                   Configuration.GetConnectionString("MyCs")));
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment ENV)
         {
-            if (env.IsDevelopment())
+            if (ENV.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
